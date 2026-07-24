@@ -1,1 +1,88 @@
+@import "tailwindcss";
+
+@keyframes neon-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5),
+                 0 0 20px rgba(59, 130, 246, 0.3),
+                 0 0 30px rgba(59, 130, 246, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.8),
+                 0 0 30px rgba(59, 130, 246, 0.6),
+                 0 0 40px rgba(59, 130, 246, 0.4),
+                 0 0 50px rgba(59, 130, 246, 0.2);
+  }
+}
+
+@keyframes neon-glow-pink {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(236, 72, 153, 0.5),
+                 0 0 20px rgba(236, 72, 153, 0.3),
+                 0 0 30px rgba(236, 72, 153, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(236, 72, 153, 0.8),
+                 0 0 30px rgba(236, 72, 153, 0.6),
+                 0 0 40px rgba(236, 72, 153, 0.4),
+                 0 0 50px rgba(236, 72, 153, 0.2);
+  }
+}
+
+@keyframes neon-glow-purple {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5),
+                 0 0 20px rgba(168, 85, 247, 0.3),
+                 0 0 30px rgba(168, 85, 247, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.8),
+                 0 0 30px rgba(168, 85, 247, 0.6),
+                 0 0 40px rgba(168, 85, 247, 0.4),
+                 0 0 50px rgba(168, 85, 247, 0.2);
+  }
+}
+
+.neon-blue {
+  animation: neon-glow 2s ease-in-out infinite;
+}
+
+.neon-pink {
+  animation: neon-glow-pink 2s ease-in-out infinite;
+}
+
+.neon-purple {
+  animation: neon-glow-purple 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+}
+
+.pulse-border {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #1a1a2e 100%);
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
